@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD98BAEC-B4CE-4F68-AC73-8E512CE85112}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KutuphaneOtomasyon</RootNamespace>
+    <AssemblyName>KutuphaneOtomasyon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.resources, Version=5.1.5.28844, Culture=tr, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ZedGraph.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.Web, Version=5.1.5.29221, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ZedGraph.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acilis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acilis.Designer.cs">
+      <DependentUpon>Acilis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ceza\CezaAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ceza\CezaAnasayfa.Designer.cs">
+      <DependentUpon>CezaAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap\KitapDetaylar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap\KitapDetaylar.Designer.cs">
+      <DependentUpon>KitapDetaylar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap\KitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap\KitapEkle.Designer.cs">
+      <DependentUpon>KitapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap\KitapGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap\KitapGuncelle.Designer.cs">
+      <DependentUpon>KitapGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap\KitapIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap\KitapIslemleri.Designer.cs">
+      <DependentUpon>KitapIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap\KitapSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap\KitapSil.Designer.cs">
+      <DependentUpon>KitapSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odunc\OduncGeriAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odunc\OduncGeriAl.Designer.cs">
+      <DependentUpon>OduncGeriAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odunc\OduncIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odunc\OduncIslemleri.Designer.cs">
+      <DependentUpon>OduncIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odunc\OduncVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odunc\OduncVer.Designer.cs">
+      <DependentUpon>OduncVer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odunc\VerilecekOgrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odunc\VerilecekOgrenci.Designer.cs">
+      <DependentUpon>VerilecekOgrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenci\OgrenciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenci\OgrenciEkle.Designer.cs">
+      <DependentUpon>OgrenciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenci\OgrenciGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenci\OgrenciGuncelle.Designer.cs">
+      <DependentUpon>OgrenciGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenci\OgrenciIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenci\OgrenciIslemleri.Designer.cs">
+      <DependentUpon>OgrenciIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ogrenci\OgrenciSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ogrenci\OgrenciSil.Designer.cs">
+      <DependentUpon>OgrenciSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Acilis.resx">
+      <DependentUpon>Acilis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ceza\CezaAnasayfa.resx">
+      <DependentUpon>CezaAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap\KitapDetaylar.resx">
+      <DependentUpon>KitapDetaylar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap\KitapEkle.resx">
+      <DependentUpon>KitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap\KitapGuncelle.resx">
+      <DependentUpon>KitapGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap\KitapIslemleri.resx">
+      <DependentUpon>KitapIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap\KitapSil.resx">
+      <DependentUpon>KitapSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odunc\OduncGeriAl.resx">
+      <DependentUpon>OduncGeriAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odunc\OduncIslemleri.resx">
+      <DependentUpon>OduncIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odunc\OduncVer.resx">
+      <DependentUpon>OduncVer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odunc\VerilecekOgrenci.resx">
+      <DependentUpon>VerilecekOgrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenci\OgrenciEkle.resx">
+      <DependentUpon>OgrenciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenci\OgrenciGuncelle.resx">
+      <DependentUpon>OgrenciGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenci\OgrenciIslemleri.resx">
+      <DependentUpon>OgrenciIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ogrenci\OgrenciSil.resx">
+      <DependentUpon>OgrenciSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseLayer\DatabaseLayer.csproj">
+      <Project>{8ceaeddb-7930-4e5e-9dd6-cb8657d1b1fc}</Project>
+      <Name>DatabaseLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{78f82df7-07c8-45ef-8a94-cdda42d3777e}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KütüphaneLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrenci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="License-LGPL.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

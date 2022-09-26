@@ -1,0 +1,6 @@
+C:\Users\User\Desktop\programlama\c#-Form\KutuphaneOtomasyon\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\User\Desktop\programlama\c#-Form\KutuphaneOtomasyon\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\User\Desktop\programlama\c#-Form\KutuphaneOtomasyon\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\programlama\c#-Form\KutuphaneOtomasyon\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\User\Desktop\programlama\c#-Form\KutuphaneOtomasyon\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\User\Desktop\programlama\c#-Form\KutuphaneOtomasyon\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache
